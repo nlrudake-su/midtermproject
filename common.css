@@ -1,0 +1,176 @@
+body {
+	background-color: white;
+	font-family: "Playfair Display", serif;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+img {
+	max-width:100%;
+	display:inline-block;
+}
+
+.navbar {
+	background-color: #4d7171;
+	height: 12vh;
+}
+
+.navbar-brand {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.5em;
+	color: white;
+}
+
+.nav-item a {
+	position: relative;
+}
+
+.nav-item a:after {content:""; display:block; position:absolute; left:0; bottom:0px; width:100%; height:1px; background-color:#fff; opacity: 0; transition:.45s; transform: translateY(10px);}
+.nav-item a:before {content:""; display:block; position:absolute; left:0; bottom:15px; top: 0px; width:100%; height:1px; background-color:#fff; opacity:0; transition:.45s; transform: translateY(-10px);}
+.nav-item a:hover:after, .nav-item a:hover:before {opacity: 1; transform:scaleX(1);}
+
+
+
+@keyframes fadeIn {
+	from { opacity:0; margin-top: 0;}
+	to { opacity: 1; margin-top: 3;}
+}
+
+.jumbotron {
+	background-color: #e7e0e7;
+	border: 2px solid #4d7171;
+	animation: fadeIn 2s;
+}
+
+.display-4 {
+	font-family: "Raleway", sans-serif;
+}
+
+.buttons {
+	border: 3px solid black;
+	background-color: #e7e0e7;
+	color: black;
+}
+
+.buttons:hover {
+	background-color: #4d7171;
+	color: white;
+	border-color: transparent;
+	transition: .45s;
+}
+
+.headings {
+	font-family: "Raleway," sans-serif;
+}
+
+.mb-4 {
+	font-weight: bold;
+}
+
+.skills-item i {
+	font-size: 5em;
+	color: #71898c;
+}
+
+#carouselExampleIndicators {
+	background-color: #e7e0e7;
+}
+
+.carousel-inner img {
+	margin: auto;
+}
+
+.list-group {
+	margin: auto;
+}
+
+.list-group-item {
+	background-color: #e7e0e7;
+	border: 2px solid #4d7171;
+}
+
+.blog-text {
+	align-self: center;
+}
+
+.blog-img img {
+	border: 2px solid #4d7171;
+	transition: .45s;
+}
+
+.blog-img img:hover {
+	transform: skew(-20deg);
+}
+
+.social a {
+	color: black;
+	text-decoration: underline;
+}
+
+.social h1 {
+	transition: .45s;
+}
+
+.social h1:hover {
+	transform: skew(-20deg);
+}
+
+.contact-item i {
+	font-size: 5em;
+	color: #71898c;
+}
+
+.linked-in a {
+	color: black;
+	text-decoration: underline;
+}
+
+.linked-in h5 {
+	transition: .45s;
+}
+
+.linked-in h5:hover {
+	transform: skew(-20deg);
+}
+
+.footer {
+	background-color: #e7e0e7;
+	border-top: 2px solid #333333; 
+	height: 25vh;
+}
+
+.footer-item i {
+	font-size: 2em;
+	color: #333333;
+	transition: .45s;
+}
+
+.footer-item i:hover {
+	transform: scale(1.5);
+}
+
+
+.footer-text {
+	color: #333333;
+}
+
+@media screen and (max-width: 992px) {
+	.blog-item-reversed .blog-img {
+		order: 1;
+	}
+
+	.blog-item-reversed .blog-text {
+		order: 2;
+	}
+
+	.blog-text {
+		margin-top: 20px;
+	}
+
+	.social img {
+		margin-top: 20px;
+	}
+}
